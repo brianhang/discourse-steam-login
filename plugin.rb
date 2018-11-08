@@ -69,7 +69,7 @@ register_css <<CSS
 }
 
 .btn-social.steam:before {
-    content: $fa-var-steam;
+    content: "\\f1b7";
 }
 
 CSS
