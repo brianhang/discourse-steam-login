@@ -6,6 +6,8 @@
 
 require File.expand_path('../omniauth-steam.rb', __FILE__)
 
+register_svg_icon "fab-steam-symbol" if respond_to?(:register_svg_icon)
+
 class SteamAuthenticator < ::Auth::Authenticator
 
   def name
@@ -66,10 +68,6 @@ register_css <<CSS
 
 .btn-social.steam {
     background: #000;
-}
-
-.btn-social.steam:before {
-    content: "\\f1b7";
 }
 
 CSS
